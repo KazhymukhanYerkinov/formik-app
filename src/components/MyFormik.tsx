@@ -41,10 +41,11 @@ export const MyFormik = () => {
         onSubmit={submit}
 
       >
-        {({ isSubmitting }) => (
+        {({ isSubmitting, touched, errors }) => (
           <Form>
-            <Field name='name' />
-            <ErrorMessage name='name' />
+            <Field name='name'/>
+            { errors.name && touched.name && (<p> { errors.name } </p>) }
+            
 
 
             <Field name='email' type='email' />

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import MyFormik from './components/MyFormik';
+import { MyForms } from './components/MyForms';
 
 function App() {
   return (
